@@ -18,7 +18,7 @@ export const ArrowButton = ({ onClick, className }: ArrowButtonProps) => {
             top-[30%]
             absolute
             right-[40%]
-            outline
+            outlined
         "
       />
       <div
@@ -30,7 +30,7 @@ export const ArrowButton = ({ onClick, className }: ArrowButtonProps) => {
             top-[30%]
             absolute
             left-[35%]
-            outline
+            outlined
         "
       />
     </div>
