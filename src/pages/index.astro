@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { ArrowButton } from "../components/arrowbutton/ArrowButton";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,6 +13,7 @@ import Layout from "../layouts/Layout.astro";
       class="flex-[50%] max-w-[500px] min-w-[300px] w-1/3"
     />
     <button submit-button class="flex justify-self-end">Submit</button>
+    <ArrowButton />
     <div class="flex-[0.3]"></div>
   </div>
   <div
@@ -49,6 +51,7 @@ import Layout from "../layouts/Layout.astro";
         window.requestAnimationFrame(function () {
           window.scroll(0, height * toPage);
           ticking = false;
+          alert(ticking);
         });
       } else if (oldScroll > window.scrollY && !ticking) {
         //down
