@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { ArrowButton } from "../components/arrowbutton/ArrowButton";
+function scrollToSection(sectionId: string) {
+  const section = document.getElementById(sectionId);
+  section?.scrollIntoView({ behavior: "smooth" });
+}
 ---
 
 <Layout title="Welcome to Astro.">
@@ -14,10 +18,15 @@ import { ArrowButton } from "../components/arrowbutton/ArrowButton";
         class="flex-[50%] max-w-[500px] min-w-[300px] w-1/3"
       />
       <button submit-button class="flex justify-self-end">Submit</button>
-      <ArrowButton className="mt-8" />
+      <ArrowButton
+        client:only="react"
+        className="mt-8"
+        onClick={() => scrollToSection("secondContainer")}
+      />
       <div class="flex-[0.3]"></div>
     </div>
     <div
+      id="secondContainer"
       parent-container
       class="flex justify-around items-center h-screen w-screen flex-col bg-slate-400 grow-0 outlined snap-center"
     >
