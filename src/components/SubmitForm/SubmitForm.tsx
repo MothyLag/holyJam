@@ -13,6 +13,11 @@ const SubmitForm = () => {
         <label className="flex self-start">Ingresa una restricción: </label>
         <input className="w-[100%] outlined focus:outlined" />
       </div>
+      <div className="w-[50%] flex justify-end">
+        <button submit-button class="">
+          Submit
+        </button>
+      </div>
     </div>
   );
 };
