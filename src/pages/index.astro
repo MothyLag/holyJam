@@ -4,75 +4,49 @@ import { ArrowButton } from "../components/arrowbutton/ArrowButton";
 ---
 
 <Layout title="Welcome to Astro.">
-  <div
-    parent-container
-    class="flex justify-around items-center h-screen w-screen flex-col bg-slate-600 grow-0"
-  >
-    <img
-      src="/Logo1.svg"
-      class="flex-[50%] max-w-[500px] min-w-[300px] w-1/3"
-    />
-    <button submit-button class="flex justify-self-end">Submit</button>
-    <ArrowButton />
-    <div class="flex-[0.3]"></div>
+  <div class="overflow-auto h-screen snap-y snap-mandatory no-scrollbar">
+    <div
+      parent-container
+      class="flex justify-around items-center h-screen w-screen flex-col bg-slate-600 grow-0 outlined snap-center"
+    >
+      <img
+        src="/Logo1.svg"
+        class="flex-[50%] max-w-[500px] min-w-[300px] w-1/3"
+      />
+      <button submit-button class="flex justify-self-end">Submit</button>
+      <ArrowButton className="mt-8" />
+      <div class="flex-[0.3]"></div>
+    </div>
+    <div
+      parent-container
+      class="flex justify-around items-center h-screen w-screen flex-col bg-slate-400 grow-0 outlined snap-center"
+    >
+      <img
+        src="/Logo1.svg"
+        class="flex-[50%] max-w-[500px] min-w-[300px] w-1/3"
+      />
+      <div class="flex-[0.3]"></div>
+    </div>
+    <div
+      parent-container
+      id="lastContainer"
+      class="flex justify-around items-center h-screen w-screen flex-col bg-slate-300 grow-0 outlined snap-center"
+    >
+      <img
+        src="/Logo1.svg"
+        class="flex-[50%] max-w-[500px] min-w-[300px] w-1/3"
+      />
+      <div class="flex-[0.3]"></div>
+    </div>
   </div>
-  <div
-    parent-container
-    class="flex justify-around items-center h-screen w-screen flex-col bg-slate-400 grow-0"
-  >
-    <img
-      src="/Logo1.svg"
-      class="flex-[50%] max-w-[500px] min-w-[300px] w-1/3"
-    />
-    <div class="flex-[0.3]"></div>
-  </div>
-  <div
-    parent-container
-    class="flex justify-around items-center h-screen w-screen flex-col bg-slate-300 grow-0"
-  >
-    <img
-      src="/Logo1.svg"
-      class="flex-[50%] max-w-[500px] min-w-[300px] w-1/3"
-    />
-    <div class="flex-[0.3]"></div>
-  </div>
-  <script is:inline>
-    let oldScroll = window.scrollY;
-    let ticking = false;
-    window.addEventListener("scroll", (event) => {
-      const currentY = window.scrollY;
-      const parents = document.querySelectorAll("[parent-container]");
-      const pages = parents.length;
-      const height = window.innerHeight;
-      const currentPage = Math.floor(window.scrollY / height) + 1;
-      if (oldScroll < window.scrollY && !ticking) {
-        //up
-        const toPage = currentPage + 1;
-        window.requestAnimationFrame(function () {
-          window.scroll(0, height * toPage);
-          ticking = false;
-          alert(ticking);
-        });
-      } else if (oldScroll > window.scrollY && !ticking) {
-        //down
-        const toPage = currentPage - 1;
-        window.requestAnimationFrame(function () {
-          window.scroll(0, height * toPage);
-          ticking = false;
-        });
-      }
-      ticking = true;
-      oldScroll = currentY;
-    });
-
+  <script>
     const buttons = document.querySelectorAll("[submit-button]");
-    buttons?.forEach((button) => {
-      const parents = document.querySelectorAll("[parent-container]");
-      const pages = parents.length;
-      button.addEventListener("click", () => {
-        const height = window.innerHeight;
-        window.scroll(0, height * pages);
-      });
-    });
+    buttons.forEach((button) =>
+      button.addEventListener("click", () => scrollToSection("lastContainer"))
+    );
+    function scrollToSection(sectionId: string) {
+      const section = document.getElementById(sectionId);
+      section?.scrollIntoView({ behavior: "smooth" });
+    }
   </script>
 </Layout>
