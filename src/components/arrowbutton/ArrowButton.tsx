@@ -13,7 +13,7 @@ export const ArrowButton = ({ onClick, className }: ArrowButtonProps) => {
         className="
             w-[50%]
             h-[15px]
-            bg-[#5cb130]
+            bg-krillin
             rotate-45
             top-[30%]
             absolute
@@ -25,7 +25,7 @@ export const ArrowButton = ({ onClick, className }: ArrowButtonProps) => {
         className="
             w-[50%]
             h-[15px]
-            bg-[#5cb130]
+            bg-krillin
             -rotate-45
             top-[30%]
             absolute
