@@ -40,6 +40,10 @@ button:active {
     0px -5px 0px #000;
 }
 
+h1 {
+  @apply text-4xl;
+}
+
 @keyframes bounce {
   0%,
   100% {

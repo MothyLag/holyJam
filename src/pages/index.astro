@@ -1,10 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { ArrowButton } from "../components/arrowbutton/ArrowButton";
-function scrollToSection(sectionId: string) {
-  const section = document.getElementById(sectionId);
-  section?.scrollIntoView({ behavior: "smooth" });
-}
+import { ScrollArrow } from "../components/ScrollArrow";
+
 ---
 
 <Layout title="Welcome to Astro.">
@@ -18,11 +16,7 @@ function scrollToSection(sectionId: string) {
         class="flex-[50%] max-w-[500px] min-w-[300px] w-1/3"
       />
       <button submit-button class="flex justify-self-end">Submit</button>
-      <ArrowButton
-        client:only="react"
-        className="mt-8"
-        onClick={() => scrollToSection("secondContainer")}
-      />
+      <ScrollArrow client:only="react"/>
       <div class="flex-[0.3]"></div>
     </div>
     <div

@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import "../global.css";
+import '@fontsource-variable/pixelify-sans';
 ---
 
 <!doctype html>
@@ -21,3 +22,9 @@ import "../global.css";
     <slot />
   </body>
 </html>
+
+<style is:global>
+  body{
+    font-family: 'Pixelify Sans Variable', sans-serif;
+  }
+</style>

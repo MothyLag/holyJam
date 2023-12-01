@@ -17,6 +17,9 @@ dependencies:
   '@astrojs/vercel':
     specifier: ^5.2.0
     version: 5.2.0(astro@3.6.4)
+  '@fontsource-variable/pixelify-sans':
+    specifier: ^5.0.1
+    version: 5.0.1
   '@types/react':
     specifier: ^18.0.21
     version: 18.2.39
@@ -870,6 +873,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/pixelify-sans@5.0.1:
+    resolution: {integrity: sha512-CAU9pAYo6/8CCrznnT6WSvgAyuMzQPGDH5JNEmTfk6rpGlEPFjuH4m0klnkwvtLEMFXbApKAQpbLsESEKzZ5YQ==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
