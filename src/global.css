@@ -40,23 +40,44 @@ button:active {
     0px -5px 0px #000;
 }
 
-input{
+input {
   padding: 20px;
   outline: none;
   background-color: transparent;
   border-radius: 3px;
   padding: 20px;
-  background-color: #E62253;
+  background-color: #e62253;
   color: white;
   font-weight: bolder;
   font-size: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: 5px 0px 0px #000, -5px 0px 0px #000, 0px 5px 0px #000,
+    0px -5px 0px #000;
 }
 
-
+input:focus {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, 5px 0px 0px #000,
+    -5px 0px 0px #000, 0px 5px 0px #000, 0px -5px 0px #000;
+}
 
 h1 {
   @apply text-4xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+label {
+  @apply text-xl p-2 font-bold;
 }
 
 @keyframes bounce {
