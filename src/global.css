@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 button {
-  background: linear-gradient(#09f 50%, #0090f0 50%);
+  background: linear-gradient(#e62253 50%, #d31b49 50%);
   color: #fff;
   border: none;
   font-size: 1.4rem;
