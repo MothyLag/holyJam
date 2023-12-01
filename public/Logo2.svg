@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 357.44 126.75">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #5cb130;
+        stroke: #1e2c52;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        font-size: 75.25px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: HomeChristmas-Regular, 'Home Christmas';
+      }
+
+      .cls-3 {
+        font-size: 112.79px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <text class="cls-2" transform="translate(92.5 97.02)"><tspan x="0" y="0">ol</tspan></text>
+      <text class="cls-3" transform="translate(1 96.87)"><tspan x="0" y="0">H</tspan></text>
+      <path class="cls-1" d="m207.2,51.64c0,.45-.38.75-.83.75h-.75l-10.99,22.57-14.67,33.14h1.2c.38,0,.75.38.75.83,0,.38-.38.75-.75.75h-14.07c-.38,0-.75-.38-.75-.75,0-.45.38-.83.75-.83h1.2l14.67-33.06-10.99-22.65h-1.58c-.45,0-.83-.3-.83-.75s.38-.75.83-.75h13.7c.45,0,.75.3.75.75s-.3.75-.75.75h-.38l8.13,16.25,8.2-16.25h-.68c-.45,0-.75-.3-.75-.75s.3-.75.75-.75h7c.45,0,.83.3.83.75Z"/>
+    </g>
+    <image width="1150" height="500" transform="translate(209.99 32.77) scale(.13)" xlink:href="../jams.png"/>
+  </g>
+</svg>
