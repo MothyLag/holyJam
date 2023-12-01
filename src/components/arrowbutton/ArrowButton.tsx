@@ -1,11 +1,12 @@
 interface ArrowButtonProps {
   onClick?: () => void;
+  className?: string;
 }
 
-export const ArrowButton = ({ onClick }: ArrowButtonProps) => {
+export const ArrowButton = ({ onClick, className }: ArrowButtonProps) => {
   return (
     <div
-      className="max-w-[100px] animate-[bounce_1s_infinite] p-8 h-[80px] relative  cursor-pointer "
+      className={`max-w-[100px] animate-[bounce_1s_infinite] p-8 h-[80px] relative  cursor-pointer ${className}`}
       onClick={onClick}
     >
       <div
@@ -17,6 +18,7 @@ export const ArrowButton = ({ onClick }: ArrowButtonProps) => {
             top-[30%]
             absolute
             right-[40%]
+            outline
         "
       />
       <div
@@ -28,6 +30,7 @@ export const ArrowButton = ({ onClick }: ArrowButtonProps) => {
             top-[30%]
             absolute
             left-[35%]
+            outline
         "
       />
     </div>

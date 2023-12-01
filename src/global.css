@@ -35,6 +35,11 @@ button:active {
     5px 0px 0px #000, -5px 0px 0px #000, 0px 5px 0px #000, 0px -5px 0px #000;
 }
 
+.outline {
+  box-shadow: 5px 0px 0px #000, -5px 0px 0px #000, 0px 5px 0px #000,
+    0px -5px 0px #000;
+}
+
 @keyframes bounce {
   0%,
   100% {
