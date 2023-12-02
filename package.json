@@ -17,6 +17,7 @@
     "@fontsource-variable/pixelify-sans": "^5.0.1",
     "@heathmont/moon-core-tw": "^10.11.0",
     "@heathmont/moon-themes-tw": "^10.11.0",
+    "@supabase/supabase-js": "^2.39.0",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "astro": "^3.6.4",
