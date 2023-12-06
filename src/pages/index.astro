@@ -29,18 +29,15 @@ import { ScrollArrow } from "../components/ScrollArrow";
     <div
       id="secondContainer"
       parent-container
-      class="flex justify-around items-center h-screen w-screen flex-col grow-0 outlined snap-center"
+      class="flex justify-around items-center h-screen w-screen flex-col grow-0 snap-center"
     >
       <BasesPage />
 
-      <div class="flex-[0.3]">
-        <button submit-button class="flex justify-self-end">Registro</button>
-      </div>
     </div>
     <div
       parent-container
       id="lastContainer"
-      class="flex justify-around items-center h-screen w-screen flex-col grow-0 outlined snap-center"
+      class="flex justify-around items-center h-screen w-screen flex-col grow-0 snap-center"
     >
       <SubmitForm client:only="react" />
       <div class="flex-[0.3]"></div>

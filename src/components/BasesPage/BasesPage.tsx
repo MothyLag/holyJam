@@ -1,13 +1,26 @@
 const BasesPage = () => {
   return (
-    <div className="grid grid-rows-1 grid-cols-2 w-screen h-screen">
-      <div className="left-container flex justify-center items-start">
-        <h1>¿Esto que es?</h1>
-      </div>
-      <div className="right-container flex justify-center items-start">
-        asdasd
+    <div className="flex flex-col justify-center items-center w-screen h-[200vh]">
+      <div className="flex flex-col items-center gap-4">
+        <img src="/Logo2.svg" className="w-3/4" alt="" />
+        <br />
+        <h1 className="text-moon-40 font-bold">Como participar?</h1>
+        <a href="https://discord.gg/ZwEBbUTz" className="w-4/5">
+          <img src="/Steps.png" alt="Pasos" />
+        </a>
+        <h1 className="text-moon-32 font-bold">Qué es la Holy Jam?</h1>
+        <p className="text-moon-24 w-4/5">
+          Es una game jam de santa secreto en la que tienes la oportunidad de
+          pedirle a alguien más el juego que siempre quisiste! Escribe tu
+          nombre, una temática y será enviada a tu santa secreto, también podrás
+          actuar como jack frost y mandar una restricción a otra persona.
+        </p>
+        <a href="https://discord.gg/ZwEBbUTz" className="w-4/5">
+          <img src="/Steps2.png" alt="Pasos" />
+        </a>
       </div>
     </div>
   );
 };
+
 export default BasesPage;

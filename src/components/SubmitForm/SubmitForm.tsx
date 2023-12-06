@@ -65,7 +65,7 @@ const SubmitForm = () => {
             Sign in
           </a>
         </p>
-        <button onClick={() => console.log(user)}>Submit</button>
+        <button onClick={() => console.log(user)}>Unete!</button>
       </div>
     </form>
   );
