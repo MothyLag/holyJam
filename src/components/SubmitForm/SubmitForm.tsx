@@ -60,9 +60,9 @@ const SubmitForm = () => {
       </div>
       <div className="w-[50%] flex justify-between items-end ">
         <p>
-          Already have an account?{" "}
+          Ya te registraste?{" "}
           <a className="text-chichi underline" href="/signin">
-            Sign in
+            Entra
           </a>
         </p>
         <button onClick={() => console.log(user)}>Unete!</button>
